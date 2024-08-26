@@ -1,0 +1,35 @@
+org: joaodev
+app: aws-sls-api
+service: serverless-crud
+frameworkVersion: '4'
+
+plugins:
+  # - serverless-esbuild
+
+provider:
+  name: aws
+  runtime: nodejs20.x
+
+package:
+  individually: true
+
+custom:
+  esbuild:
+    bundle: true
+    minify: false
+    sourcemap: false
+    exclude:
+      - '@aws-sdk/*'
+    target: node20
+    define:
+      require.resolve: undefined
+    platform: node
+    concurrency: 10
+
+functions:
+  listProducts:
+    handler: src/functions/listProducts.handler
+    events:
+      - httpApi:
+          path: /products
+          method: GET
