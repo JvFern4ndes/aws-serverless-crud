@@ -1,6 +1,6 @@
 export async function handler() {
     return {
         statusCode: 200,
-        body: 'listProducts',
+        body: 'deleteProduct',
     }
 }
