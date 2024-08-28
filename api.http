@@ -8,6 +8,13 @@ GET {{host}}/products/123
 
 ###
 POST {{host}}/products
+Content-Type: application/json
+
+{
+    "name": "Moletom JStack",
+    "price": 189.9,
+    "tags": ["moleta", "zica do baile"]
+}
 
 ###
 PUT {{host}}/products/123
