@@ -1,0 +1,16 @@
+@host = https://prgukmsatf.execute-api.us-east-1.amazonaws.com
+
+###
+GET {{host}}/products
+
+###
+GET {{host}}/products/123
+
+###
+POST {{host}}/products
+
+###
+PUT {{host}}/products/123
+
+###
+DELETE {{host}}/products/123
