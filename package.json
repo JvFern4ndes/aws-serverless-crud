@@ -3,7 +3,8 @@
     "node": ">=14.15.0"
   },
   "dependencies": {
-    "@aws-sdk/client-dynamodb": "^3.637.0"
+    "@aws-sdk/client-dynamodb": "^3.637.0",
+    "@aws-sdk/lib-dynamodb": "^3.637.0"
   },
   "devDependencies": {
     "@serverless/typescript": "^3.38.0",
