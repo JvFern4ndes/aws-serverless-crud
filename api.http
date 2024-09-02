@@ -20,4 +20,4 @@ Content-Type: application/json
 PUT {{host}}/products/123
 
 ###
-DELETE {{host}}/products/79e36113-df39-4357-b093-b66a6662b8f7
+DELETE {{host}}/products/ee5e0df4-97b5-4b9c-a73f-4999a979e62b
