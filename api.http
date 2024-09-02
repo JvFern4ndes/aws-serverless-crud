@@ -17,7 +17,14 @@ Content-Type: application/json
 }
 
 ###
-PUT {{host}}/products/123
+PUT {{host}}/products/b9769bc0-e9bb-4f6e-bb57-d9c63e547328
+Content-Type: application/json
+
+{
+    "name": "Moletom JStack",
+    "price": 199.9,
+    "tags": ["moleta","zica do baile"]
+}
 
 ###
-DELETE {{host}}/products/ee5e0df4-97b5-4b9c-a73f-4999a979e62b
+DELETE {{host}}/products/87775109-8603-419c-a944-362ad746f03a
